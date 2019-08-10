@@ -1,0 +1,27 @@
+#include<avr/io.h>
+#include<util/delay.h>
+int main()
+{
+DDRC = 0XFF;
+DDRD = 0XFF;
+{
+ while(1)
+ {
+  PORTC = 0X54;
+  PORTD = 0X02;
+  _delay_ms(2000);
+
+  PORTC = 0XA1;
+  PORTD = 0X02; 
+  _delay_ms(2000);
+
+  PORTC = 0X09;
+  PORTD = 0X05;
+  _delay_ms(2000);
+
+  PORTC = 0X4A;
+  PORTD = 0X08;
+  _delay_ms(2000);
+  }
+  }
+  }
